@@ -1,0 +1,142 @@
+.container img{
+    position: absolute;
+    animation: showMe 2s linear infinite 0s forwards;
+    animation-play-state: running;
+}
+
+@keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+.container img:nth-child(1){
+    z-index: 1;
+}
+.container img:nth-child(2){
+    animation-delay: 0.5s;
+    z-index: 2;
+}
+.container img:nth-child(3){
+    animation-delay: 1s;
+    z-index: 3;
+}
+.container img:nth-child(4){
+    animation-delay: 1.5s;
+    z-index: 4;
+}
+
+.g{
+   width: 200px;
+   height: auto; 
+   
+   animation: change-img-anim 4s infinite;
+}
+
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+header{
+    background-color: #fff;
+    /* border-bottom: 1px solid #ccc; */
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    padding-top: 100px;
+}
+
+
+main{
+    border-bottom:1px solid #ccc;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+}
+#gu_btn:hover{
+    color:#fff;
+}
+
+#gu_btn{
+    font-size: 30px;
+    height: auto;
+    border: 10px solid #666;
+    cursor: pointer;
+    width:30%;
+    font-weight: bold;
+    background-color: rgb(238, 69, 69);
+}
+
+#gu_btn:hover{
+    color:#fff;
+}
+
+#cho_btn{
+    font-size: 30px;
+    height: auto;
+    border: 10px solid #666;
+    cursor: pointer;
+    width:30%;
+    font-weight: bold;
+    background-color: rgb(161, 66, 66);
+}
+
+#cho_btn:hover{
+    color:#fff;
+}
+
+#pa_btn{
+    font-size: 30px;
+    height: auto;
+    border: 10px solid #666;
+    cursor: pointer;
+    width:30%;
+    font-weight: bold;
+    background-color: darkgoldenrod;
+}
+
+#pa_btn:hover{
+    color:#fff;
+}
+
+ul{
+    padding: 0;
+    /* border-top: 1px solid #000000; */
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+    
+}
+
+li{
+    text-align: center;
+    list-style-type:none;
+    /* border: 1px solid #666; */
+    background-color: #FFF;
+    display:table-cell;  /*定義*/
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.abc{
+    border: none;
+}
+
+.class{
+    padding-left: 50px;
+}
